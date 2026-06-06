@@ -1,5 +1,5 @@
  نصب و اجرا
- 
+
 ----------------------------------------------------
 
 1️⃣ کلون کردن پروژه:
@@ -39,3 +39,16 @@ npm run dev
 پس از اجرای پروژه، مرورگر خود را باز کرده و به آدرس زیر بروید:
 
 http://localhost:5173/
+
+
+
+## 📸 تصویر سایز دکستاپ
+
+(./src/assets/images/Screenshot%20(1109).png)
+(./src/assets/images/Screenshot%20(1110).png)
+
+
+## 📸 تصویر سایز موبایل
+
+(./src/assets/images/Screenshot%20(1111).png)
+(./src/assets/images/Screenshot%20(1112).png)
