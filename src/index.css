@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+  background: #f1f5f9;
+}
+
+:lang(fa) {
+  font-family: "yekan";
+}
+
+.ant-card {
+  border-radius: 18px !important;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.ant-layout-sider {
+  background: white !important;
+}
+
+.ant-menu {
+  background: white !important;
+}
+
+.ant-menu-item-selected {
+  background: #eff6ff !important;
+  color: #2563eb !important;
+}
