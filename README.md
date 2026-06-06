@@ -44,11 +44,11 @@ http://localhost:5173/
 
 ## 📸 تصویر سایز دکستاپ
 
-(./src/assets/images/Screenshot%20(1109).png)
-(./src/assets/images/Screenshot%20(1110).png)
+<img src="./src/assets/images/Screenshot%20(1109).png" width="900"/>
+<img src="./src/assets/images/Screenshot%20(1110).png" width="900"/>
 
 
 ## 📸 تصویر سایز موبایل
 
-(./src/assets/images/Screenshot%20(1111).png)
-(./src/assets/images/Screenshot%20(1112).png)
+<img src="./src/assets/images/Screenshot%20(1111).png" width="900"/>
+<img src="./src/assets/images/Screenshot%20(1112).png" width="900"/>
