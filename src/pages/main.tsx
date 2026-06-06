@@ -78,7 +78,6 @@ const columns = [
   { id: "4", title: "در انتظار پرداخت", color: "bg-emerald-500" },
 ];
 
-// ---------------- STATUS LABEL ----------------
 const getCardStatusLabel = (status: number) => {
   switch (status) {
     case 1:
@@ -186,11 +185,9 @@ export default function RequestBoard() {
                   flex-col
                 "
               >
-                {/* HEADER */}
                 <div className="sticky top-0 z-20 bg-white">
                   <div className="p-5">
 
-                    {/* TITLE */}
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         <div
@@ -213,7 +210,6 @@ export default function RequestBoard() {
                       </button>
                     </div>
 
-                    {/* SEARCH */}
                     <div className="mt-5">
                       <div className="h-11 rounded-2xl bg-slate-100 px-3 flex items-center gap-2">
                         <SearchOutlined className="text-slate-400" />
@@ -232,7 +228,6 @@ export default function RequestBoard() {
                       </div>
                     </div>
 
-                    {/* FILTER */}
                     <div className="mt-3 relative">
                       <FilterOutlined className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 z-10" />
 
@@ -261,7 +256,6 @@ export default function RequestBoard() {
                   <div className="h-px bg-slate-100" />
                 </div>
 
-                {/* BODY */}
                 <Droppable droppableId={column.id}>
                   {(provided) => (
                     <div
@@ -307,7 +301,6 @@ export default function RequestBoard() {
                               `}
                             >
 
-                              {/* CARD HEADER */}
                               <div className="flex justify-between items-start">
                                 <div>
                                   <span className="text-xs text-slate-400">
@@ -318,7 +311,6 @@ export default function RequestBoard() {
                                     {item.fullName}
                                   </h3>
 
-                                  {/* ⭐ STATUS BADGE (NEW) */}
                                   <div className="mt-2 inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200">
                                     <span
                                       className={`
@@ -347,7 +339,6 @@ export default function RequestBoard() {
                                 />
                               </div>
 
-                              {/* INFO */}
                               <div className="flex items-center gap-3 mt-4">
                                 <div className="w-11 h-11 rounded-full bg-slate-100 flex items-center justify-center font-bold">
                                   {item.fullName[0]}
@@ -363,7 +354,6 @@ export default function RequestBoard() {
                                 </div>
                               </div>
 
-                              {/* AMOUNT */}
                               <div className="mt-4 rounded-2xl bg-slate-50 border border-slate-100 p-4">
                                 <div className="text-xs text-slate-400">
                                   مبلغ تسهیلات
@@ -376,16 +366,34 @@ export default function RequestBoard() {
                                 </div>
                               </div>
 
-                              {/* FOOTER */}
-                              <div className="mt-4 pt-4 border-t flex justify-between items-center">
-                                <span className="text-xs text-slate-400">
-                                  {item.createdAt}
-                                </span>
+<div className="mt-4 pt-4 border-t flex justify-between items-center">
+  <span className="text-xs text-slate-400">
+    {item.createdAt}
+  </span>
 
-                                <button className="px-3 py-1.5 rounded-xl bg-sky-50 text-sky-700 text-xs opacity-0 group-hover:opacity-100 transition-all">
-                                  مشاهده
-                                </button>
-                              </div>
+  <div className="flex items-center gap-2 transition-all">
+
+    <button
+      className="
+        px-2.5 py-1.5
+        rounded-xl
+        bg-red-50
+        text-red-600
+        text-xs
+        hover:bg-red-100
+        transition
+        flex items-center gap-1
+      "
+    >
+      حذف
+    </button>
+
+    <button className="px-3 py-1.5 rounded-xl bg-sky-50 text-sky-700 text-xs">
+      مشاهده
+    </button>
+
+  </div>
+</div>
 
                             </div>
                           )}
