@@ -82,7 +82,7 @@ const App: React.FC = () => {
 
       <Layout>
 
-        <Header className="bg-white! border-b border-slate-200 px-2! sm:px-10! h-18">
+        <Header className="bg-white! border-b border-slate-200 px-2! sm:px-10! h-18!">
           <div className="h-full flex items-center justify-between">
             <div className="flex items-center gap-3">
 
